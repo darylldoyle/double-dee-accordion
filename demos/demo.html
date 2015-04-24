@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Double Dee Accordion Demo</title>
+	<link rel="stylesheet" type="text/css" href="accordion.css">
+</head>
+<body>
+
+	<h1>Accordion Demo</h1>
+
+	<div class="accordion">
+	    <div class="wrap initial">
+	        <h4 class="title">Title 1</h4>
+	        <div class="innerContent">Some content for this accordion</div>
+	    </div>
+
+	    <div class="wrap">
+	        <h4 class="title">Title 2</h4>
+	        <div class="innerContent">Some different content for this accordion</div>
+	    </div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../src/double-dee-accordion.js"></script>
+<script>
+	var accordian = doubleDeeAccordion($('.accordion'));
+</script>
+</body>
+</html>

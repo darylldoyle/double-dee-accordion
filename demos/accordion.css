@@ -1,0 +1,50 @@
+h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.accordion {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  width: 20em;
+  margin: auto;
+}
+.accordion .wrap {
+  overflow: hidden;
+}
+.accordion .title {
+  font-size: 1em;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  background: rgba(100, 100, 100, 0.8);
+  padding: .5em 1em;
+  margin: 0;
+}
+.accordion .title:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: .4em solid transparent;
+  border-bottom: .4em solid transparent;
+  border-left: .7em solid #000;
+  position: absolute;
+  top: .75em;
+  right: 1em;
+}
+.accordion .wrap.open .title:after {
+  border-left: .4em solid transparent;
+  border-right: .4em solid transparent;
+  border-top: .7em solid #000;
+  border-bottom: none;
+}
+.accordion .wrap.open .innerContent {
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.accordion .innerContent {
+  font-size: .9em;
+  -webkit-transition: height 0.4s;
+          transition: height 0.4s;
+}
